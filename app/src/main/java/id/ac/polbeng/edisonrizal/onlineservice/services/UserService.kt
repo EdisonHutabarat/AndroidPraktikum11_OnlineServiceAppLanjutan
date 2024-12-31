@@ -32,4 +32,9 @@ interface UserService {
     fun deleteUser(
         @Path("id") id: Int
     ): Call<DefaultResponse>
+
+    @DELETE("services/{id}")
+    fun deleteService(
+        @Path("id") idJasa: Int
+    ) : Call<DefaultResponse>
 }

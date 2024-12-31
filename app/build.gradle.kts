@@ -71,4 +71,8 @@ dependencies {
 
     // Library untuk logging hasil request API
     implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+
+    // Library untuk permission dan file picker
+    implementation("pub.devrel:easypermissions:3.0.0")
+    implementation("com.github.dhaval2404:imagepicker:2.1")
 }

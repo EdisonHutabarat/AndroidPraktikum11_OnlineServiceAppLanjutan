@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -15,13 +16,32 @@
         android:theme="@style/Theme.OnlineService"
         tools:targetApi="31">
         <activity
+            android:name=".activities.EditJasaActivity"
+            android:exported="false"
+            android:label="@string/ubah_jasa"
+            android:parentActivityName=".activities.MainActivity"/>
+        <activity
+            android:name=".activities.AddJasaActivity"
+            android:exported="false"
+            android:label="@string/tambah_jasa"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.DetailJasaActivity"
+            android:exported="false"
+            android:label="Detail Jasa"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
             android:name=".activities.EditProfileActivity"
             android:exported="false"
             android:label="@string/ubah_profile"
             android:parentActivityName=".activities.MainActivity">
-        <meta-data
-            android:name="android.app.lib_name"
-            android:value="" />
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
         <activity
             android:name=".activities.RegisterActivity"
